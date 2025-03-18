@@ -39,19 +39,18 @@ class RedisInvocationFramework:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Process a config file to call Redis API.")
-    parser.add_argument('infile', type=str, help='The name of the file to process')
-    parser.add_argument('outfile', type=str, help='The name of the file in which to store results')
-    parser.add_argument('dry_run', type=bool, help='Add dry_run=true to validate the post data without executing the command')
+    parser.add_argument("infile", type=str, help="The name of the file to process")
+    parser.add_argument("outfile", type=str, help="The name of the file in which to store results")
+    parser.add_argument("--dry_run", type=bool, required=False, help="Add dry_run=True to validate the post data without executing the command")
     args = parser.parse_args()
 
     infile = args.infile
     outfile = args.outfile
-
-    if(args.dry_run == True):
-        dry_run = args.dry_run
-    framework = RedisInvocationFramework(infile)
+    dry_run = args.dry_run
     
+    framework = RedisInvocationFramework(infile)
     json = framework.invoke(dry_run)
+
     with open(outfile, "w") as f:
         f.write(json)
 
