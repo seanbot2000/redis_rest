@@ -1,0 +1,12 @@
+{
+    "api": [
+        {
+            "name": "nodes",
+            "endpoint": "/v1/nodes",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        }
+    ]
+}

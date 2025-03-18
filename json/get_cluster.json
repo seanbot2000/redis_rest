@@ -1,0 +1,12 @@
+{
+    "api": [
+        {
+            "name": "cluster",
+            "endpoint": "/v1/cluster",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        }
+    ]
+}

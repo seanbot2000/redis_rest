@@ -1,0 +1,12 @@
+{
+    "api": [
+        {
+            "name": "shards",
+            "endpoint": "/v1/shards",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        }
+    ]
+}

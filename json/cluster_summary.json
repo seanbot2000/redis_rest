@@ -1,0 +1,44 @@
+{
+    "api": [
+        {
+            "name": "cluster",
+            "endpoint": "/v1/cluster",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        },
+        {
+            "name": "nodes",
+            "endpoint": "/v1/nodes",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        },
+        {
+            "name": "shards",
+            "endpoint": "/v1/shards",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        },
+        {
+            "name": "users",
+            "endpoint": "/v1/users",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        },
+        {
+            "name": "proxies",
+            "endpoint": "/v1/proxies",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        }
+    ]
+}

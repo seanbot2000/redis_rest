@@ -1,0 +1,12 @@
+{
+    "api": [
+        {
+            "name": "proxies",
+            "endpoint": "/v1/proxies",
+            "method": "GET",
+            "headers": {
+                "accept": "application/json"
+            }
+        }
+    ]
+}
